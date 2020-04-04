@@ -88,11 +88,8 @@ const App = () => {
           setNewName("");
           setNewNumber("");
         })
-        .catch(() => {
-          notify(
-            `Information of ${person.name} has already been removed from the server`,
-            true
-          );
+        .catch((error) => {
+          notify(error.response.data.error, true);
         });
     }
   };

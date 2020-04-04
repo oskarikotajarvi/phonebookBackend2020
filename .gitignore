@@ -1,2 +1,3 @@
 node_modules
 phonebook_frontend/node_modules
+.env
